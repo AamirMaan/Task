@@ -56,7 +56,11 @@ const Card = () => {
       <section className="tiles-container">
         {userData.map((item, index) => (
           <div key={index} className="tile group">
-            <img src={item.img} className="tile-image group-hover:hidden" />
+            <img
+              src={item.img}
+              className="tile-image group-hover:hidden"
+              alt=""
+            />
             <video
               className="tile-video group-hover:flex hidden"
               onMouseOver={(event) => event.currentTarget.play()}
